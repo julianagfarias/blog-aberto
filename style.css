@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&family=Macondo&display=swap');
+
+/* variáveis */
+:root {
+
+	--azul-escuro: #070C26;
+	--azul-claro: #42558C;
+	--roxo-claro: #B48ABF;
+	--roxo-escuro: #765477;
+
+	--fonte-principal: 'Dosis', sans-serif;
+	--fonte-secundaria: 'Macondo', cursive;
+}
+
+body {
+	font-family: var(--fonte-principal);
+}
+
+/* customização da barra de navegação */
+#barra-nav {
+	background-color: var(--azul-claro);
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+/* lista não ordenada da barra de navegação */
+#barra-nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	padding-right: 5rem;
+}
+
+/* itens de lista da barra de navegação */
+#barra-nav li {
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: 600;
+	padding: 5px 2px;
+}
+
+#barra-nav .nav-link:hover {
+	color: var(--roxo-escuro);
+	background-color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+#logo img {
+	display: inline-block;
+	position: relative;
+	left: 5rem;
+}
