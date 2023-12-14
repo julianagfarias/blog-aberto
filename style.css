@@ -14,6 +14,7 @@
 
 body {
 	font-family: var(--fonte-principal);
+	background-color: var(--azul-escuro);
 }
 
 /* customização da barra de navegação */
@@ -56,4 +57,94 @@ body {
 	display: inline-block;
 	position: relative;
 	left: 5rem;
+}
+
+/* customização da hero image */
+.hero-texto {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.bgimage {
+	height: 100vh;
+	position: relative;
+	background: url("img/hero.jpg");
+	background-size: cover;
+}
+
+.hero-titulo {
+	font-size: 4.5rem;
+	font-family: var(--fonte-secundaria);
+}
+
+.hero-sub {
+	font-size: 2rem;
+}
+
+/*
+ seção postagens 
+.titulo-posts {
+	position: absolute;
+	left: 50%;
+	color: white;
+	transform: translateX(-50%);
+}
+*/
+
+/* seções do corpo da página */
+#post, #criar, #sobre {
+	margin: 5rem;
+	background-color: var(--roxo-claro);
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+
+/* customizações do formulário de criar novo post */
+#post-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#post-form input {
+	width: 100%;
+}
+
+#post-form textarea {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10rem;
+}
+
+#post-form button {
+	width: 30%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* customização da coluna de apresentação */
+.dev {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.img-dev {
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.dev p {
+	padding: 1rem 0;
+}
+
+.icone-contato {
+	font-size: 32px;
+	padding-bottom: 1rem;
+	color: var(--roxo-escuro);
 }
