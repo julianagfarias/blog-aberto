@@ -85,15 +85,18 @@ body {
 	font-size: 2rem;
 }
 
-/*
- seção postagens 
+/* seção postagens */
+#post {
+	position: relative;
+}
+
 .titulo-posts {
 	position: absolute;
+	top: -15%;
 	left: 50%;
-	color: white;
 	transform: translateX(-50%);
+	color: white;
 }
-*/
 
 /* seções do corpo da página */
 #post, #criar, #sobre {
@@ -147,4 +150,15 @@ body {
 	font-size: 32px;
 	padding-bottom: 1rem;
 	color: var(--roxo-escuro);
+}
+
+#comentario {
+	min-width: 100%;
+}
+
+/* customização do rodapé */
+.rodape {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	color: white;
 }
