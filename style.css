@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&family=Macondo&display=swap');
+@font-face {
+	font-family: 'Macondo';
+	src: url('fonts/Macondo/Macondo-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Dosis';
+	src: url('fonts/Dosis/static/Dosis-Light.ttf') format('truetype');
+	font-weight: light;
+}
+
+@font-face {
+	font-family: 'Dosis';
+	src: url('fonts/Dosis/static/Dosis-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
 
 /* variáveis */
 :root {
@@ -15,6 +31,11 @@
 body {
 	font-family: var(--fonte-principal);
 	background-color: var(--azul-escuro);
+	cursor: url('img/cursor.png'), auto;
+}
+
+a {
+	cursor: url('img/hover.png'), auto;
 }
 
 /* customização da barra de navegação */
@@ -29,6 +50,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1000;
+	cursor: url('img/hover.png'), auto;
 }
 
 /* lista não ordenada da barra de navegação */
@@ -43,7 +65,7 @@ body {
 #barra-nav li {
 	display: inline-block;
 	margin-right: 10px;
-	font-weight: 600;
+	font-weight: bold;
 	padding: 5px 2px;
 }
 

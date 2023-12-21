@@ -50,5 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		postElemento.remove();
 	}
 
+	document.getElementById('barra-nav').addEventListener('click', function(){
+		const corAleatoria = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+		this.style.backgroundColor = corAleatoria;
+	})
+
 
 } )
